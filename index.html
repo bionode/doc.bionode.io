@@ -4,106 +4,214 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>Bionode</title>
 
-    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
     <style>
       .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
-.highlight, .highlight .w {
-  color: #f8f8f2;
-  background-color: #272822;
-}
-.highlight .err {
-  color: #151515;
-  background-color: #ac4142;
-}
-.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
-  color: #505050;
-}
-.highlight .cp {
-  color: #f4bf75;
-}
-.highlight .nt {
-  color: #f4bf75;
-}
-.highlight .o, .highlight .ow {
-  color: #d0d0d0;
-}
-.highlight .p, .highlight .pi {
-  color: #d0d0d0;
-}
-.highlight .gi {
-  color: #90a959;
-}
-.highlight .gd {
-  color: #ac4142;
-}
 .highlight .gh {
-  color: #6a9fb5;
-  background-color: #151515;
-  font-weight: bold;
-}
-.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
-  color: #aa759f;
-}
-.highlight .kc {
-  color: #d28445;
-}
-.highlight .kt {
-  color: #d28445;
-}
-.highlight .kd {
-  color: #d28445;
-}
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #90a959;
+  color: #999999;
 }
 .highlight .sr {
-  color: #75b5aa;
+  color: #f6aa11;
 }
-.highlight .si {
-  color: #8f5536;
+.highlight .go {
+  color: #888888;
 }
-.highlight .se {
-  color: #8f5536;
+.highlight .gp {
+  color: #555555;
 }
-.highlight .nn {
-  color: #f4bf75;
+.highlight .gs {
 }
-.highlight .nc {
-  color: #f4bf75;
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
 }
 .highlight .no {
-  color: #f4bf75;
+  color: #66d9ef;
 }
-.highlight .na {
-  color: #6a9fb5;
+.highlight .kt {
+  color: #66d9ef;
 }
-.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
-  color: #90a959;
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
 }
 .highlight .ss {
-  color: #90a959;
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
 }
     </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;javascript&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" />
+        <img src="images/navbar.png" alt="Navbar" />
       </span>
     </a>
     <div class="tocify-wrapper">
-      <img src="images/logo.png" />
+      <img src="images/logo.png" alt="Logo" />
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
+              <a href="#" data-language-name="javascript">javascript</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -112,7 +220,7 @@
       <div id="toc">
       </div>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
+            <li><a href='https://gitter.im/bionode/bionode'>Chat room</a></li>
             <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
@@ -121,89 +229,61 @@
       <div class="content">
         <h1 id="introduction">Introduction</h1>
 
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Welcome to the Bionode documentation! Here we document only some of the currently more stable modules. If the module you are looking for is not here, please check for its <a href="https://github.com/search?q=org:bionode+topic:tool">GitHub repository</a> in the list below and read the README.md file.</p>
 
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p><a href="https://github.com/search?q=org:bionode+topic:tool"><strong>Bionode modules list</strong></a></p>
 
-<p>This example API documentation page was created with <a href="https://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&rsquo;s documentation.</p>
+<p>Bionode modules can be used as command line tools or JavaScript libraries! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
 
-<h1 id="authentication">Authentication</h1>
+<h1 id="installation">Installation</h1>
 
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<p>Make sure you have the latest <a href="https://nodejs.org/en/">Node.JS installed</a>. You can then install each module with npm (see shell examples on the right).</p>
+<pre class="highlight shell tab-shell"><code><span class="c"># Install module as command line tool available in PATH</span>
+<span class="c"># using npm -g option</span>
+npm install bionode-ncbi -g
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="c"># Install locally in the node_modules folder of a project</span>
+<span class="c"># for usage as a library. See the JavaScript tab.</span>
+npm install bionode-ncbi
 </code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<h1 id="bionode-ncbi">bionode-ncbi</h1>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<h2 id="general-usage">General usage</h2>
+<pre class="highlight shell tab-shell"><code>bionode-ncbi &lt;<span class="nb">command</span>&gt; <span class="o">[</span>arguments] --limit <span class="o">[</span>num] --pretty
+
+<span class="c">## Options</span>
+--stdin, -s         Read STDIN  
+--limit, -l         Limit number of results  
+--throughput, -t    Number of items per API request  
+--pretty, -p        Print human readable output instead of NDJSON  
+<span class="nb">export </span><span class="nv">DEBUG</span><span class="o">=</span><span class="s1">'*'</span>    Debug mode
+
+<span class="c"># Display CLI help</span>
+bionode-ncbi --help
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">ncbi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'bionode-ncbi'</span><span class="p">)</span>
+
+<span class="c1">// Callback pattern</span>
+<span class="nx">ncbi</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s1">'genome'</span><span class="p">,</span> <span class="s1">'human'</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span>
+
+<span class="c1">// Event pattern</span>
+<span class="nx">ncbi</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s1">'genome'</span><span class="p">,</span> <span class="s1">'human'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+
+<span class="c1">// Pipe pattern</span>
+<span class="kd">var</span> <span class="nx">JSONStream</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'JSONStream'</span><span class="p">)</span>
+
+<span class="nx">ncbi</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s1">'genome'</span><span class="p">,</span> <span class="s1">'human'</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">JSONStream</span><span class="p">.</span><span class="nx">stringify</span><span class="p">())</span>
+<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">stdout</span><span class="p">)</span>
 </code></pre>
-<pre class="highlight shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
+<h2 id="search">Search</h2>
 
-<blockquote>
-<p>Make sure to replace <code class="prettyprint">meowmeowmeow</code> with your API key.</p>
-</blockquote>
+<p>Takes a database name and a query term. Returns the metadata.</p>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
+<p>For a list of NCBI database that can be used, see this <a href="#bionode-ncbi-database">documentation&rsquo;s appendix</a></p>
 
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+<h3 id="usage">Usage</h3>
 
-<p><code class="prettyprint">Authorization: meowmeowmeow</code></p>
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
-<h1 id="kittens">Kittens</h1>
-
-<h2 id="get-all-kittens">Get All Kittens</h2>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre>
-
-<p>This endpoint retrieves all kittens.</p>
-
-<h3 id="http-request">HTTP Request</h3>
-
-<p><code class="prettyprint">GET http://example.com/api/kittens</code></p>
-
-<h3 id="query-parameters">Query Parameters</h3>
+<p><code class="prettyprint">search &lt;db&gt; [term]</code></p>
 
 <table><thead>
 <tr>
@@ -213,125 +293,712 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
+<td>db</td>
+<td>none</td>
+<td><a href="#bionode-ncbi-database">One of these</a></td>
 </tr>
 <tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>term</td>
+<td>none</td>
+<td>Species, dataset ID, etc</td>
 </tr>
 </tbody></table>
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-
-<h2 id="get-a-specific-kitten">Get a Specific Kitten</h2>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+<pre class="highlight shell tab-shell"><code>bionode-ncbi search search taxonomy <span class="s1">'solenopsis invicta'</span> --limit 1 --pretty
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="nx">ncbi</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s1">'taxonomy'</span><span class="p">,</span> <span class="s1">''</span><span class="nx">solenopsis</span> <span class="nx">invicta</span><span class="s1">''</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+</code></pre><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"13686"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"rank"</span><span class="p">:</span><span class="w"> </span><span class="s2">"species"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"division"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ants"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"scientificname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Solenopsis invicta"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"commonname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"red fire ant"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"taxid"</span><span class="p">:</span><span class="w"> </span><span class="mi">13686</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"akataxid"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"genus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Solenopsis"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"species"</span><span class="p">:</span><span class="w"> </span><span class="s2">"invicta"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"subsp"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"modificationdate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015/09/16 00:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"genbankdivision"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invertebrates"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre>
+</span></code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// Arguments can be passed as an object instead:</span>
+<span class="nx">ncbi</span><span class="p">.</span><span class="nx">search</span><span class="p">({</span> <span class="na">db</span><span class="p">:</span> <span class="s1">'sra'</span><span class="p">,</span> <span class="na">term</span><span class="p">:</span> <span class="s1">'solenopsis'</span> <span class="p">})</span>
+<span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// Advanced options can be passed using the previous syntax:</span>
+<span class="kd">var</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">db</span><span class="p">:</span> <span class="s1">'assembly'</span><span class="p">,</span> <span class="c1">// database to search</span>
+  <span class="na">term</span><span class="p">:</span> <span class="s1">'human'</span><span class="p">,</span>  <span class="c1">// optional term for search</span>
+  <span class="na">limit</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span>     <span class="c1">// optional limit of NCBI results</span>
+  <span class="na">throughput</span><span class="p">:</span> <span class="mi">100</span> <span class="c1">// optional number of items per request</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// The search term can also be passed with write:</span>
+<span class="kd">var</span> <span class="nx">search</span> <span class="o">=</span> <span class="nx">ncbi</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s1">'sra'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+<span class="nx">search</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">'solenopsis'</span><span class="p">)</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// Or piped, for example, from a file:</span>
+<span class="kd">var</span> <span class="nx">split</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'split'</span><span class="p">)</span>
 
-<p>This endpoint retrieves a specific kitten.</p>
+<span class="nx">fs</span><span class="p">.</span><span class="nx">createReadStream</span><span class="p">(</span><span class="s1">'searchTerms.txt'</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">split</span><span class="p">())</span>
+<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">search</span><span class="p">)</span>
+</code></pre>
+<h2 id="fetch">Fetch</h2>
 
-<aside class="warning">Inside HTML code blocks like this one, you can&rsquo;t use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<p>Takes a database name and a query term. Returns the data.</p>
 
-<h3 id="http-request">HTTP Request</h3>
+<h3 id="usage">Usage</h3>
 
-<p><code class="prettyprint">GET http://example.com/kittens/&lt;ID&gt;</code></p>
-
-<h3 id="url-parameters">URL Parameters</h3>
+<p><code class="prettyprint">fetch &lt;db&gt; [term]</code></p>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Default</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td>db</td>
+<td>none</td>
+<td><a href="#bionode-ncbi-database">One of these</a></td>
+</tr>
+<tr>
+<td>term</td>
+<td>none</td>
+<td>Species, dataset ID, etc</td>
 </tr>
 </tbody></table>
+<pre class="highlight shell tab-shell"><code>bionode-ncbi fetch nucest p53 -l 1 --pretty
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="nx">ncbi</span><span class="p">.</span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'nucest'</span><span class="p">,</span> <span class="s1">'p53'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+</code></pre><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"JZ923713.1 clone 186 Pelteobagrus fulvidraco spleen cDNA library Tachysurus fulvidraco cDNA similar to p53, mRNA sequence"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"seq"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ACTCCACAACTTCACCCTGCACTTCCAGAAGTCTAGTACGGCCAAATCAGTCACCTGCACGTACTCCCCGGAGCTGAATAAACTCTTCTGTCAGTTAGCTAAGACGTGCCCTGTGCTCATGGCAGTGAGTTTTTCTCCACCACATGGTTCTGTGCTCAGAGCCACTGCTGTGT"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// With advanced parameters for sequence databases (all are optional):</span>
+<span class="kd">var</span> <span class="nx">opts</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="na">db</span><span class="p">:</span> <span class="s1">'nucest'</span><span class="p">,</span>
+   <span class="na">term</span><span class="p">:</span> <span class="s1">'guillardia_theta'</span><span class="p">,</span>
+   <span class="na">strand</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+   <span class="na">complexity</span><span class="p">:</span> <span class="mi">4</span>
+ <span class="p">}</span>
+<span class="nx">ncbi</span><span class="p">.</span><span class="nx">fetch</span><span class="p">(</span><span class="nx">opts</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+</code></pre>
+<p>For some databases there are multiple return types. A default one will be chosen automatically, however it is possible to specify this via the rettype option. The NCBI website provides a list of databasese supported by efetch here: <a href="http://www.ncbi.nlm.nih.gov/books/NBK25497/table/chapter2.T._entrez_unique_identifiers_ui/?report=objectonly">http://www.ncbi.nlm.nih.gov/books/NBK25497/table/chapter2.T._entrez_unique_identifiers_ui/?report=objectonly</a></p>
 
-          <h1 id="errors">Errors</h1>
+<h2 id="urls">URLs</h2>
 
-<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files&hellip;just save them to the `includes` folder and add them to the top of your `index.md`&rsquo;s frontmatter. Files are included in the order listed.</aside>
+<p>Takes either <code class="prettyprint">sra</code> or <code class="prettyprint">assembly</code> database name and query term. Returns URLs of datasets.</p>
 
-<p>The Kittn API uses the following error codes:</p>
+<h3 id="usage">Usage</h3>
+
+<p><code class="prettyprint">urls &lt;dlsource&gt; [term]</code></p>
+<pre class="highlight shell tab-shell"><code>bionode-ncbi urls assembly human -l 1 -p
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="nx">ncbi</span><span class="p">.</span><span class="nx">urls</span><span class="p">(</span><span class="s1">'assembly'</span><span class="p">,</span> <span class="s1">'human'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+</code></pre><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1075781"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"assembly_report"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/GCA_00185686
+5.2_ASM185686v2_assembly_report.txt"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"assembly_stats"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/GCA_00185686
+5.2_ASM185686v2_assembly_stats.txt"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"cds_from_genomic"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"fna"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/GCA_00185686
+5.2_ASM185686v2_cds_from_genomic.fna.gz"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"feature_table"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/GCA_00185686
+5.2_ASM185686v2_feature_table.txt.gz"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"genomic"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"fna"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/GCA_001856865.2_ASM185686v2_genomic.fna.gz"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"gbff"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/GCA_001856865.2_ASM185686v2_genomic.gbff.gz"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"gff"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/GCA_00185686
+5.2_ASM185686v2_genomic.gff.gz"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"protein"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"faa"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/GCA_001856865.2_ASM185686v2_protein.faa.gz"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"gpff"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/GCA_0018568
+65.2_ASM185686v2_protein.gpff.gz"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"rna_from_genomic"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"fna"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/GCA_00185686
+5.2_ASM185686v2_rna_from_genomic.fna.gz"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"wgsmaster"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"gbff"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/GCA_0018568
+65.2_ASM185686v2_wgsmaster.gbff.gz"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"README"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/README.txt"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"annotation_hashes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/annotation_hashes.txt"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"assembly_status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/assembly_status.txt"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"md5checksums"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"txt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/md5checksums.txt"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><pre class="highlight shell tab-shell"><code><span class="c"># The following examples requires a json parser</span>
+bionode-ncbi urls assembly human -l 1 -p | json genomic.fna
+<span class="c"># Returns: http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/856/865/GCA_001856865.2_ASM185686v2/GCA_001856865.2_ASM185686v2_genomic.fna.gz</span>
+</code></pre>
+<h2 id="download">Download</h2>
+
+<p>Takes either sra or assembly db name and query term. Downloads the corresponding SRA or assembly (genomic.fna) file into a folder named after the unique ID (UID).</p>
+
+<h3 id="usage">Usage</h3>
+
+<p><code class="prettyprint">download &lt;dlsource&gt; [term]</code></p>
+<pre class="highlight shell tab-shell"><code>bionode-ncbi download assembly <span class="s1">'solenopsis invicta'</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="nx">ncbi</span><span class="p">.</span><span class="nx">download</span><span class="p">(</span><span class="s1">'assembly'</span><span class="p">,</span> <span class="s1">'solenopsis invicta'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'end'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">path</span><span class="p">)</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'File saved at '</span> <span class="o">+</span> <span class="nx">path</span><span class="p">)</span> <span class="p">}</span>
+</code></pre><pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"244018"</span><span class="p">,</span><span class="s2">"url"</span><span class="p">:</span><span class="s2">"http://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/188/075/GCF_000188075.1_Si_gnG/GCF_000188075.1_Si_gnG_genomic.fna.gz"</span><span class="p">,</span><span class="s2">"path"</span><span class="p">:</span><span class="s2">"244018/GCF_000188075.1_Si_gnG_genomic.fna.gz"</span><span class="p">,</span><span class="s2">"status"</span><span class="p">:</span><span class="s2">"downloading"</span><span class="p">,</span><span class="s2">"total"</span><span class="p">:</span><span class="mi">557056</span><span class="p">,</span><span class="s2">"progress"</span><span class="p">:</span><span class="mf">0.4775266121244368</span><span class="p">,</span><span class="s2">"speed"</span><span class="p">:</span><span class="mi">131072</span><span class="p">}</span><span class="w">
+</span></code></pre><pre class="highlight shell tab-shell"><code>bionode-ncbi download assembly <span class="s1">'solenopsis invicta'</span> --pretty
+<span class="c"># Downloading GCF_000188075.1_Si_gnG_genomic.fna.gz</span>
+<span class="c"># [&gt;                                            ] 0.7% of 116.65 MB (192.51 kB/s)</span>
+</code></pre>
+<h2 id="link">Link</h2>
+
+<p>Returns a unique ID (UID) from a destination database linked to another UID from a source database.</p>
+
+<h3 id="usage">Usage</h3>
+
+<p><code class="prettyprint">link &lt;srcDB&gt; &lt;destDB&gt; [srcUID]</code></p>
+<pre class="highlight shell tab-shell"><code>bionode-ncbi link assembly bioproject 244018 --pretty
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="nx">ncbi</span><span class="p">.</span><span class="nx">link</span><span class="p">(</span><span class="s1">'assembly'</span><span class="p">,</span> <span class="s1">'bioproject'</span><span class="p">,</span> <span class="mi">244018</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+</code></pre><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"srcDB"</span><span class="p">:</span><span class="w"> </span><span class="s2">"assembly"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"destDB"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bioproject"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"srcUID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"244018"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"destUIDs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"268798"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"49629"</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="expand">Expand</h2>
+
+<p>Takes a property (e.g. biosample) and an optional destination property
+(e.g. sample) and looks for a field named property+id (e.g. biosampleid)
+in the Streamed object. Then it will do a <code class="prettyprint">ncbi.search</code> for that id and save the
+result under Streamed object.property.</p>
+
+<h3 id="usage">Usage</h3>
+
+<p><code class="prettyprint">expand &lt;property&gt; [destProperty]</code></p>
+<pre class="highlight shell tab-shell"><code>bionode-ncbi search genome <span class="s1">'solenopsis invicta'</span> -l 1 | <span class="se">\</span>
+bionode-ncbi expand tax -s --pretty
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="nx">ncbi</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s1">'genome'</span><span class="p">,</span> <span class="s1">'solenopsis invicta'</span><span class="p">).</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">ncbi</span><span class="p">.</span><span class="nx">expand</span><span class="p">(</span><span class="s1">'tax'</span><span class="p">))</span>
+</code></pre><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2938"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"organism_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Solenopsis invicta"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"organism_kingdom"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Eukaryota"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"organism_group"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"organism_subgroup"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Insects"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"defline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Solenopsis invicta overview"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"projectid"</span><span class="p">:</span><span class="w"> </span><span class="mi">49663</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"project_accession"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRJNA49663"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Draft"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"number_of_chromosomes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"number_of_plasmids"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"number_of_organelles"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"assembly_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Si_gnG"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"assembly_accession"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GCA_000188075.1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"assemblyid"</span><span class="p">:</span><span class="w"> </span><span class="mi">244018</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"create_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2011/02/03 00:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"options"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"weight"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"chromosome_assemblies"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"scaffold_assemblies"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sra_genomes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"taxid"</span><span class="p">:</span><span class="w"> </span><span class="mi">13686</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"tax"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"13686"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"rank"</span><span class="p">:</span><span class="w"> </span><span class="s2">"species"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"division"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ants"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"scientificname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Solenopsis invicta"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"commonname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"red fire ant"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"taxid"</span><span class="p">:</span><span class="w"> </span><span class="mi">13686</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"akataxid"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"genus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Solenopsis"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"species"</span><span class="p">:</span><span class="w"> </span><span class="s2">"invicta"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"subsp"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"modificationdate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015/09/16 00:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"genbankdivision"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invertebrates"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="plink">Plink</h2>
+
+<p>Similar to Link but takes the <code class="prettyprint">srcUID</code> from a property of the Streamed object
+and attaches the result to a property with the name of the destination DB.</p>
+
+<h3 id="usage">Usage</h3>
+
+<p><code class="prettyprint">bionode-ncbi plink &lt;property&gt; &lt;destDB&gt;</code></p>
+<pre class="highlight shell tab-shell"><code>bionode-ncbi search genome <span class="s1">'solenopsis invicta'</span> -l 1 | <span class="se">\</span>
+bionode-ncbi expand tax -s | <span class="se">\</span>
+bionode-ncbi plink tax sra -s --pretty
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="nx">ncbi</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s1">'genome'</span><span class="p">,</span> <span class="s1">'solenopsis invicta'</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">ncbi</span><span class="p">.</span><span class="nx">expand</span><span class="p">(</span><span class="s1">'tax'</span><span class="p">))</span>
+<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">ncbi</span><span class="p">.</span><span class="nx">plink</span><span class="p">(</span><span class="s1">'tax'</span><span class="p">,</span> <span class="s1">'sra'</span><span class="p">)</span>
+</code></pre><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w"> </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"2938"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"organism_name"</span><span class="p">:</span><span class="s2">"Solenopsis invicta"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"organism_kingdom"</span><span class="p">:</span><span class="s2">"Eukaryota"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"organism_group"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"organism_subgroup"</span><span class="p">:</span><span class="s2">"Insects"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"defline"</span><span class="p">:</span><span class="s2">"Solenopsis invicta overview"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"projectid"</span><span class="p">:</span><span class="mi">49663</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"project_accession"</span><span class="p">:</span><span class="s2">"PRJNA49663"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="s2">"Draft"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"number_of_chromosomes"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"number_of_plasmids"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"number_of_organelles"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"assembly_name"</span><span class="p">:</span><span class="s2">"Si_gnG"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"assembly_accession"</span><span class="p">:</span><span class="s2">"GCA_000188075.1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"assemblyid"</span><span class="p">:</span><span class="mi">244018</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"create_date"</span><span class="p">:</span><span class="s2">"2011/02/03 00:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"options"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"weight"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"chromosome_assemblies"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"scaffold_assemblies"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sra_genomes"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"taxid"</span><span class="p">:</span><span class="mi">13686</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"tax"</span><span class="p">:{</span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"13686"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"rank"</span><span class="p">:</span><span class="s2">"species"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"division"</span><span class="p">:</span><span class="s2">"ants"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"scientificname"</span><span class="p">:</span><span class="s2">"Solenopsis invicta"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"commonname"</span><span class="p">:</span><span class="s2">"red fire ant"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"taxid"</span><span class="p">:</span><span class="mi">13686</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"akataxid"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"genus"</span><span class="p">:</span><span class="s2">"Solenopsis"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"species"</span><span class="p">:</span><span class="s2">"invicta"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"subsp"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"modificationdate"</span><span class="p">:</span><span class="s2">"2015/09/16 00:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"genbankdivision"</span><span class="p">:</span><span class="s2">"Invertebrates"</span><span class="p">},</span><span class="w">
+  </span><span class="s2">"sraid"</span><span class="p">:[</span><span class="s2">"2209130"</span><span class="p">,</span><span class="s2">"2209129"</span><span class="p">,</span><span class="s2">"2209128"</span><span class="p">,</span><span class="s2">"2209127"</span><span class="p">,</span><span class="s2">"2209126"</span><span class="p">,</span><span class="s2">"2209125"</span><span class="p">,</span><span class="s2">"2209124"</span><span class="p">,</span><span class="s2">"2209123"</span><span class="p">,</span><span class="s2">"2209122"</span><span class="p">,</span><span class="s2">"2209121"</span><span class="p">,</span><span class="s2">"2209120"</span><span class="p">,</span><span class="s2">"2209119"</span><span class="p">,</span><span class="s2">"1094137"</span><span class="p">,</span><span class="s2">"1094136"</span><span class="p">,</span><span class="s2">"1094135"</span><span class="p">,</span><span class="s2">"280243"</span><span class="p">,</span><span class="s2">"280116"</span><span class="p">,</span><span class="s2">"280115"</span><span class="p">,</span><span class="s2">"280114"</span><span class="p">,</span><span class="s2">"280113"</span><span class="p">,</span><span class="s2">"280112"</span><span class="p">,</span><span class="s2">"280111"</span><span class="p">,</span><span class="s2">"280110"</span><span class="p">,</span><span class="s2">"280109"</span><span class="p">,</span><span class="s2">"280108"</span><span class="p">,</span><span class="s2">"280107"</span><span class="p">,</span><span class="s2">"280099"</span><span class="p">,</span><span class="s2">"280098"</span><span class="p">,</span><span class="s2">"280097"</span><span class="p">,</span><span class="s2">"279869"</span><span class="p">,</span><span class="s2">"279868"</span><span class="p">,</span><span class="s2">"279867"</span><span class="p">,</span><span class="s2">"279866"</span><span class="p">,</span><span class="s2">"279865"</span><span class="p">,</span><span class="s2">"279864"</span><span class="p">,</span><span class="s2">"279863"</span><span class="p">,</span><span class="s2">"279040"</span><span class="p">,</span><span class="s2">"278922"</span><span class="p">,</span><span class="s2">"278818"</span><span class="p">,</span><span class="s2">"278816"</span><span class="p">,</span><span class="s2">"278808"</span><span class="p">,</span><span class="s2">"278807"</span><span class="p">,</span><span class="s2">"278806"</span><span class="p">,</span><span class="s2">"278805"</span><span class="p">,</span><span class="s2">"278802"</span><span class="p">,</span><span class="s2">"225471"</span><span class="p">,</span><span class="s2">"225470"</span><span class="p">,</span><span class="s2">"225469"</span><span class="p">,</span><span class="s2">"225468"</span><span class="p">,</span><span class="s2">"25256"</span><span class="p">,</span><span class="s2">"25255"</span><span class="p">,</span><span class="s2">"25254"</span><span class="p">,</span><span class="s2">"25253"</span><span class="p">,</span><span class="s2">"25252"</span><span class="p">,</span><span class="s2">"25251"</span><span class="p">,</span><span class="s2">"24418"</span><span class="p">,</span><span class="s2">"23953"</span><span class="p">,</span><span class="s2">"23952"</span><span class="p">,</span><span class="s2">"23951"</span><span class="p">,</span><span class="s2">"23920"</span><span class="p">,</span><span class="s2">"23919"</span><span class="p">,</span><span class="s2">"23918"</span><span class="p">,</span><span class="s2">"23917"</span><span class="p">,</span><span class="s2">"23914"</span><span class="p">,</span><span class="s2">"23912"</span><span class="p">,</span><span class="s2">"23468"</span><span class="p">,</span><span class="s2">"23459"</span><span class="p">,</span><span class="s2">"23457"</span><span class="p">]}</span><span class="w">
+</span></code></pre>
+<h1 id="bionode-fasta">bionode-fasta</h1>
+
+<p>Streamable FASTA parser.</p>
+
+<h2 id="usage">Usage</h2>
+<pre class="highlight shell tab-shell"><code><span class="c"># bionode-fasta [options] [input file] [output file]</span>
+bionode-fasta input.fasta.gz output.json
+<span class="c"># You can also use fasta files compressed with gzip</span>
+<span class="c"># If no output is provided, the result will be printed to stdout</span>
+<span class="c"># Options: -p, --path: Includes the path of the original file as a property of the output objects</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// Returns a Writable Stream that parses a FASTA content Buffer</span>
+<span class="c1">// into a JSON Buffer</span>
+
+<span class="kd">var</span> <span class="nx">fasta</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'bionode-fasta'</span><span class="p">)</span>
+
+<span class="nx">fs</span><span class="p">.</span><span class="nx">createReadStream</span><span class="p">(</span><span class="s1">'./input.fasta'</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">fasta</span><span class="p">())</span>
+<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">stdout</span><span class="p">)</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// Can also parse content from filenames Strings</span>
+<span class="c1">// streamed to it</span>
+
+<span class="nx">fs</span><span class="p">.</span><span class="nx">createReadStream</span><span class="p">(</span><span class="s1">'./fasta-list.txt'</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">split</span><span class="p">())</span>
+<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">fasta</span><span class="p">({</span><span class="na">filenameMode</span><span class="p">:</span> <span class="kc">true</span><span class="p">}))</span>
+<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">stdout</span><span class="p">)</span>
+</code></pre><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contig1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"seq"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AGTCATGACTGACGTACGCATG"</span><span class="w"> </span><span class="p">}</span><span class="w">
+</span><span class="p">{</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contig2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"seq"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ATGTACGTACTGCATGC"</span><span class="w"> </span><span class="p">}</span><span class="w">
+</span></code></pre><pre class="highlight shell tab-shell"><code>bionode-fasta input.fasta.gz output.json --path
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// When filenames are Streamed like in the previous example,</span>
+<span class="c1">// or passed directly to the parser Stream, they can be added</span>
+<span class="c1">// to the output Objects</span>
+<span class="nx">fasta</span><span class="p">({</span><span class="na">includePath</span><span class="p">:</span> <span class="kc">true</span><span class="p">},</span> <span class="s1">'./input.fasta'</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">stdout</span><span class="p">)</span>
+</code></pre><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contig1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"seq"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AGTCATGACTGACGTACGCATG"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"./input.fasta"</span><span class="w"> </span><span class="p">}</span><span class="w">
+</span></code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// The output from the parser can also be available</span>
+<span class="c1">// as Objects instead of Buffers</span>
+
+<span class="nx">fasta</span><span class="p">({</span><span class="na">objectMode</span><span class="p">:</span> <span class="kc">true</span><span class="p">},</span> <span class="s1">'./input.fasta'</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// Shortcut version of the previous example</span>
+<span class="nx">fasta</span><span class="p">.</span><span class="nx">obj</span><span class="p">(</span><span class="s1">'./input.fasta'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// Callback style can also be used, however they might</span>
+<span class="c1">// not be the best for large files</span>
+<span class="nx">fasta</span><span class="p">.</span><span class="nx">obj</span><span class="p">(</span><span class="s1">'./input.fasta'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre>
+<h1 id="bionode-seq">bionode-seq</h1>
+
+<p>Module for DNA, RNA and protein sequences manipulation</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>This method currently only works as a JavaScript library and doesn&rsquo;t provide a CLI interface (see <a href="https://github.com/bionode/bionode-seq/issues/5">issue #5</a>).</p>
+
+<h2 id="checktype">checkType</h2>
+
+<p>Check sequence type</p>
+
+<p>Takes a sequence string and checks if it’s DNA, RNA or protein. Follows IUPAC notation which allows ambiguous sequence notation. In this case the sequence is labelled as ambiguous nucleotide rather than amino acid sequence.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">seq</span><span class="p">.</span><span class="nx">checkType</span><span class="p">(</span><span class="s2">"ATGACCCTGAGAAGAGCACCG"</span><span class="p">);</span>
+<span class="c1">// Returns: "dna"</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">checkType</span><span class="p">(</span><span class="s2">"AUGACCCUGAAGGUGAAUGAA"</span><span class="p">);</span>
+<span class="c1">// Returns: "rna"</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">checkType</span><span class="p">(</span><span class="s2">"MAYKSGKRPTFFEVFKAHCSDS"</span><span class="p">);</span>
+<span class="c1">// Returns: "protein"</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">checkType</span><span class="p">(</span><span class="s2">"AMTGACCCTGAGAAGAGCACCG"</span><span class="p">);</span>
+<span class="c1">// Returns: "ambiguousDna"</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">checkType</span><span class="p">(</span><span class="s2">"AMUGACCCUGAAGGUGAAUGAA"</span><span class="p">);</span>
+<span class="c1">// Returns: "ambiguousRna"</span>
+</code></pre>
+<p>Takes a sequence type argument and returns a function to complement bases.</p>
+
+<h2 id="reverse">reverse</h2>
+
+<p>Reverse sequence</p>
+
+<p>Takes sequence string and returns the reverse sequence.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">seq</span><span class="p">.</span><span class="nx">reverse</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGTGAA"</span><span class="p">);</span>
+<span class="c1">// "AAGTGGAAGTCCCAGTA"</span>
+</code></pre>
+<h2 id="complement">complement</h2>
+
+<p>(reverse) complement sequence</p>
+
+<p>Takes a sequence string and optional boolean for reverse, and returns its complement.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">seq</span><span class="p">.</span><span class="nx">complement</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGTGAA"</span><span class="p">);</span>
+<span class="c1">// "TACTGGGACTTCCACTT"</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">complement</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGTGAA"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="c1">// "TTCACCTTCAGGGTCAT"</span>
+<span class="c1">//Alias</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">reverseComplement</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGTGAA"</span><span class="p">);</span>
+<span class="c1">// "TTCACCTTCAGGGTCAT"</span>
+</code></pre>
+<p>Takes a sequence string and returns the reverse complement (syntax sugar).</p>
+
+<h2 id="gettranscribedbase">getTranscribedBase</h2>
+
+<p>Transcribe base</p>
+
+<p>Takes a base character and returns the transcript base.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">seq</span><span class="p">.</span><span class="nx">getTranscribedBase</span><span class="p">(</span><span class="s2">"A"</span><span class="p">);</span>
+<span class="c1">// "U"</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">getTranscribedBase</span><span class="p">(</span><span class="s2">"T"</span><span class="p">);</span>
+<span class="c1">// "A"</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">getTranscribedBase</span><span class="p">(</span><span class="s2">"t"</span><span class="p">);</span>
+<span class="c1">// "a"</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">getTranscribedBase</span><span class="p">(</span><span class="s2">"C"</span><span class="p">);</span>
+<span class="c1">// "G"</span>
+</code></pre>
+<h2 id="gettranslatedaa">getTranslatedAA</h2>
+
+<p>Get codon amino acid</p>
+
+<p>Takes an RNA codon and returns the translated amino acid.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">seq</span><span class="p">.</span><span class="nx">getTranslatedAA</span><span class="p">(</span><span class="s2">"AUG"</span><span class="p">);</span>
+<span class="c1">// "M"</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">getTranslatedAA</span><span class="p">(</span><span class="s2">"GCU"</span><span class="p">);</span>
+<span class="c1">// "A"</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">getTranslatedAA</span><span class="p">(</span><span class="s2">"CUU"</span><span class="p">);</span>
+<span class="c1">// "L"</span>
+</code></pre>
+<h2 id="removeintrons">removeIntrons</h2>
+
+<p>Remove introns</p>
+
+<p>Take a sequence and an array of exonsRanges and removes them.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">seq</span><span class="p">.</span><span class="nx">removeIntrons</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGTGAATGACAG"</span><span class="p">,</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">]]);</span>
+<span class="c1">// "TGACCCT"</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">removeIntrons</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGTGAATGACAG"</span><span class="p">,</span> <span class="p">[[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">20</span><span class="p">]]);</span>
+<span class="c1">// "GACCCTGGTGAATGA"</span>
+</code></pre>
+<h2 id="transcribe">transcribe</h2>
+
+<p>Transcribe sequence</p>
+
+<p>Takes a sequence string and returns the transcribed sequence (dna &lt;-&gt; rna). If an array of exons is given, the introns will be removed from the sequence.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">seq</span><span class="p">.</span><span class="nx">transcribe</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGTGAA"</span><span class="p">);</span>
+<span class="c1">// "AUGACCCUGAAGGUGAA"</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">transcribe</span><span class="p">(</span><span class="s2">"AUGACCCUGAAGGUGAA"</span><span class="p">);</span> <span class="c1">//reverse</span>
+<span class="c1">// "ATGACCCTGAAGGTGAA"</span>
+</code></pre>
+<h2 id="translate">translate</h2>
+
+<p>Translate sequence</p>
+
+<p>Takes a DNA or RNA sequence and translates it to protein If an array of exons is given, the introns will be removed from the sequence.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">seq</span><span class="p">.</span><span class="nx">translate</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGTGAATGACAGGAAGCCCAAC"</span><span class="p">);</span> <span class="c1">//dna</span>
+<span class="c1">// "MTLKVNDRKPN"</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">translate</span><span class="p">(</span><span class="s2">"AUGACCCUGAAGGUGAAUGACAGGAAGCCCAAC"</span><span class="p">);</span> <span class="c1">//rna</span>
+<span class="c1">// "MTLKVNDRKPN"</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">translate</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGTGAATGACAGGAAGCC"</span><span class="p">,</span> <span class="p">[[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">21</span><span class="p">]]);</span>
+<span class="c1">// "LKVND"</span>
+</code></pre>
+<h2 id="reverseexons">reverseExons</h2>
+
+<p>Reverse exons</p>
+
+<p>Takes an array of exons and the length of the reference and returns inverted coordinates.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">seq</span><span class="p">.</span><span class="nx">reverseExons</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">]],</span> <span class="mi">20</span><span class="p">);</span>
+<span class="c1">// [ [ 12, 18 ] ]</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">reverseExons</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span><span class="mi">45</span><span class="p">],</span> <span class="p">[</span><span class="mi">65</span><span class="p">,</span><span class="mi">105</span><span class="p">]],</span> <span class="mi">180</span><span class="p">);</span>
+<span class="c1">// [ [ 135, 170 ], [ 75, 115 ] ]</span>
+</code></pre>
+<h2 id="checkcanonicaltranslationstartsite">checkCanonicalTranslationStartSite</h2>
+
+<p>Find non-canonical translation start site</p>
+
+<p>Takes a sequence and returns boolean for canonical translation start site.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">seq</span><span class="p">.</span><span class="nx">checkCanonicalTranslationStartSite</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGT"</span><span class="p">);</span>
+<span class="c1">// true</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">checkCanonicalTranslationStartSite</span><span class="p">(</span><span class="s2">"AATGACCCTGAAGGT"</span><span class="p">);</span>
+<span class="c1">// false</span>
+</code></pre>
+<h2 id="getreadingframes">getReadingFrames</h2>
+
+<p>Get reading frames</p>
+
+<p>Takes a sequence and returns an array with the six possible Reading Frames (+1, +2, +3, -1, -2, -3).</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">seq</span><span class="p">.</span><span class="nx">getReadingFrames</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGTGAATGACAGGAAGCCCAAC"</span><span class="p">);</span>
+<span class="c1">// [ 'ATGACCCTGAAGGTGAATGACAGGAAGCCCAAC',</span>
+<span class="c1">//   'TGACCCTGAAGGTGAATGACAGGAAGCCCAAC',</span>
+<span class="c1">//   'GACCCTGAAGGTGAATGACAGGAAGCCCAAC',</span>
+<span class="c1">//   'GTTGGGCTTCCTGTCATTCACCTTCAGGGTCAT',</span>
+<span class="c1">//   'TTGGGCTTCCTGTCATTCACCTTCAGGGTCAT',</span>
+<span class="c1">//   'TGGGCTTCCTGTCATTCACCTTCAGGGTCAT' ]</span>
+</code></pre>
+<h2 id="getopenreadingframes">getOpenReadingFrames</h2>
+
+<p>Get open reading frames</p>
+
+<p>Takes a Reading Frame sequence and returns an array of Open Reading Frames.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">seq</span><span class="p">.</span><span class="nx">getOpenReadingFrames</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGTGAATGACAGGAAGCCCAAC"</span><span class="p">);</span>
+<span class="c1">// [ 'ATGACCCTGAAGGTGAATGACAGGAAGCCCAAC' ]</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">getOpenReadingFrames</span><span class="p">(</span><span class="s2">"AUGACCCUGAAGGUGAAUGACAGGAAGCCCAAC"</span><span class="p">);</span>
+<span class="c1">// [ 'AUGACCCUGAAGGUGAAUGACAGGAAGCCCAAC' ]</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">getOpenReadingFrames</span><span class="p">(</span><span class="s2">"ATGAGAAGCCCAACATGAGGACTGA"</span><span class="p">);</span>
+<span class="c1">// [ 'ATGAGAAGCCCAACATGA', 'GGACTGA' ]</span>
+</code></pre>
+<h2 id="getallopenreadingframes">getAllOpenReadingFrames</h2>
+
+<p>Get all open reading frames</p>
+
+<p>Takes a sequence and returns all Open Reading Frames in the six Reading Frames.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">seq</span><span class="p">.</span><span class="nx">getAllOpenReadingFrames</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGTGAATGACA"</span><span class="p">);</span>
+<span class="c1">// [ [ 'ATGACCCTGAAGGTGAATGACA' ],</span>
+<span class="c1">//  [ 'TGA', 'CCCTGA', 'AGGTGA', 'ATGACA' ],</span>
+<span class="c1">//  [ 'GACCCTGAAGGTGAATGA', 'CA' ],</span>
+<span class="c1">//  [ 'TGTCATTCACCTTCAGGGTCAT' ],</span>
+<span class="c1">//  [ 'GTCATTCACCTTCAGGGTCAT' ],</span>
+<span class="c1">//  [ 'TCATTCACCTTCAGGGTCAT' ] ]</span>
+</code></pre>
+<h2 id="findlongestopenreadingframe">findLongestOpenReadingFrame</h2>
+
+<p>Find longest open reading frame</p>
+
+<p>Takes a sequence and returns the longest ORF from all six reading frames and corresponding frame symbol (+1, +2, +3, -1, -2, -3). If a frame symbol is specified, only look for longest ORF on that frame. When sorting ORFs, if there’s a tie, choose the one that starts with start codon Methionine. If there’s still a tie, return one randomly.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="nx">seq</span><span class="p">.</span><span class="nx">findLongestOpenReadingFrame</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGTGAATGACA"</span><span class="p">);</span>
+<span class="c1">// [ 'ATGACCCTGAAGGTGAATGACA', '+1' ]</span>
+<span class="nx">seq</span><span class="p">.</span><span class="nx">findLongestOpenReadingFrame</span><span class="p">(</span><span class="s2">"ATGACCCTGAAGGTGAATGACA"</span><span class="p">,</span> <span class="s2">"-1"</span><span class="p">);</span>
+<span class="c1">// "TGTCATTCACCTTCAGGGTCAT"</span>
+</code></pre>
+          <h1 id="appendix">Appendix</h1>
+
+<h2 id="bionode-ncbi-databases">bionode-ncbi databases</h2>
+
+<aside class="notice">This list comes from the <a href="https://www.ncbi.nlm.nih.gov">NCBI website</a>. Not all of these databases have been tested with <a href="#bionode-ncbi">bionode-ncbi</a></aside>
 
 <table><thead>
 <tr>
-<th>Error Code</th>
-<th>Meaning</th>
+<th>Database</th>
+<th>Contains</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>400</td>
-<td>Bad Request &ndash; Your request sucks</td>
+<td>gquery</td>
+<td>All Databases</td>
 </tr>
 <tr>
-<td>401</td>
-<td>Unauthorized &ndash; Your API key is wrong</td>
+<td>assembly</td>
+<td>Genome assembly information</td>
 </tr>
 <tr>
-<td>403</td>
-<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
+<td>bioproject</td>
+<td>Data related to a single initiative</td>
 </tr>
 <tr>
-<td>404</td>
-<td>Not Found &ndash; The specified kitten could not be found</td>
+<td>biosample</td>
+<td>Biological source materials used in experimental assays</td>
 </tr>
 <tr>
-<td>405</td>
-<td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
+<td>biosystems</td>
+<td>Literature, small molecules, and sequence data grouped by biological relationships</td>
 </tr>
 <tr>
-<td>406</td>
-<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
+<td>books</td>
+<td>Books and documents in life science and healthcare</td>
 </tr>
 <tr>
-<td>410</td>
-<td>Gone &ndash; The kitten requested has been removed from our servers</td>
+<td>clinvar</td>
+<td>Genomic variation and its relationship to human health</td>
 </tr>
 <tr>
-<td>418</td>
-<td>I&rsquo;m a teapot</td>
+<td>clone</td>
+<td>Clones and libraries, including sequence data, map positions and distributor information</td>
 </tr>
 <tr>
-<td>429</td>
-<td>Too Many Requests &ndash; You&rsquo;re requesting too many kittens! Slow down!</td>
+<td>cdd</td>
+<td>Conserved Domains. Annotation of functional units in proteins.</td>
 </tr>
 <tr>
-<td>500</td>
-<td>Internal Server Error &ndash; We had a problem with our server. Try again later.</td>
+<td>gap</td>
+<td>Genotypes and Phenotypes (dbGaP). Interaction of genotype and phenotype in Humans</td>
 </tr>
 <tr>
-<td>503</td>
-<td>Service Unavailable &ndash; We&rsquo;re temporarially offline for maintanance. Please try again later.</td>
+<td>dbvar</td>
+<td>Genomic structural variation – insertions, deletions, duplications, inversions, mobile element insertions, translocations, and complex chromosomal rearrangements</td>
+</tr>
+<tr>
+<td>nucest</td>
+<td>Expressed Sequence Tags (dbEST). Short single-read transcript sequences from GenBank</td>
+</tr>
+<tr>
+<td>gene</td>
+<td>Genes, focusing on genomes that have been completely sequenced</td>
+</tr>
+<tr>
+<td>genome</td>
+<td>Genomes including sequences, maps, chromosomes, assemblies, and annotations</td>
+</tr>
+<tr>
+<td>gds</td>
+<td>GEO DataSets. Curated gene expression and molecular abundance DataSets assembled from the Gene Expression Omnibus (GEO)</td>
+</tr>
+<tr>
+<td>geoprofiles</td>
+<td>GEO Profiles. Individual gene expression and molecular abundance Profiles assembled from the Gene Expression Omnibus (GEO)</td>
+</tr>
+<tr>
+<td>nucgss</td>
+<td>Database of Genome Survey Sequences (dbGSS). A division of GenBank that contains short single-pass reads of genomic DNA.</td>
+</tr>
+<tr>
+<td>gtr</td>
+<td>Genetic Testing Registry (GTR). A voluntary registry of genetic tests and laboratories</td>
+</tr>
+<tr>
+<td>homologene</td>
+<td>A gene homology tool that compares nucleotide sequences between pairs of organisms in order to identify putative orthologs</td>
+</tr>
+<tr>
+<td>medgen</td>
+<td>A portal to information about medical genetics</td>
+</tr>
+<tr>
+<td>mesh</td>
+<td>MeSH (Medical Subject Headings) is the NLM controlled vocabulary thesaurus used for indexing articles for PubMed</td>
+</tr>
+<tr>
+<td>ncbisearch</td>
+<td>NCBI Web Site</td>
+</tr>
+<tr>
+<td>nlmcatalog</td>
+<td>NLM bibliographic data for journals, books, audiovisuals, computer software, electronic resources and other materials</td>
+</tr>
+<tr>
+<td>nuccore</td>
+<td>Nucleotide. A collection of sequences from several sources, including GenBank, RefSeq, TPA and PDB</td>
+</tr>
+<tr>
+<td>omim</td>
+<td>Online Mendelian Inheritance in Man (OMIM). Human genes and genetic disorders</td>
+</tr>
+<tr>
+<td>pmc</td>
+<td>PubMed Central (PMC). Full-text biomedical and life sciences journal literature, including clinical medicine and public health.</td>
+</tr>
+<tr>
+<td>popset</td>
+<td>Related DNA sequences that originate from comparative studies</td>
+</tr>
+<tr>
+<td>probe</td>
+<td>Nucleic acid reagents designed for use in a wide variety of biomedical research applications, together with information on reagent distributors, probe effectiveness, and computed sequence similarities</td>
+</tr>
+<tr>
+<td>protein</td>
+<td>Protein sequence records from a variety of sources, including GenPept, RefSeq, Swiss-Prot, PIR, PRF, and PDB.</td>
+</tr>
+<tr>
+<td>proteinclusters</td>
+<td>Protein sequences (clusters), consisting of Reference Sequence proteins encoded by complete prokaryotic and organelle plasmids and genomes</td>
+</tr>
+<tr>
+<td>pcassay</td>
+<td>PubChem BioAssay. Bioactivity assays used to screen the chemical substances contained in the PubChem Substance database</td>
+</tr>
+<tr>
+<td>pccompound</td>
+<td>PubChem Compound. Contains unique, validated chemical structures (small molecules)</td>
+</tr>
+<tr>
+<td>pcsubstance</td>
+<td>PubChem Substance. Samples and links to biological screening results that are available in PubChem BioAssay</td>
+</tr>
+<tr>
+<td>pubmed</td>
+<td>Citations and abstracts for biomedical literature from MEDLINE and additional life science journals</td>
+</tr>
+<tr>
+<td>pubmedhealth</td>
+<td>Clinical effectiveness reviews and other resources to help consumers and clinicians use and understand clinical research results. These are drawn from the NCBI Bookshelf and PubMed, including published systematic reviews from organizations such as the Agency for Health Care Research and Quality, The Cochrane Collaboration, and others (see complete listing). Links to full text articles are provided when available.</td>
+</tr>
+<tr>
+<td>snp</td>
+<td>A variety of tools are available for searching the SNP database, allowing search by genotype, method, population, submitter, markers and sequence similarity using BLAST. These are linked under &ldquo;&quot;Search&rdquo;&ldquo; on the left side bar of the dbSNP main page.</td>
+</tr>
+<tr>
+<td>sparcle</td>
+<td>SPARCLE (Subfamily Protein Architecture Labeling Engine) is a resource for the functional characterization and labeling of protein sequences that have been grouped by their characteristic conserved domain architecture</td>
+</tr>
+<tr>
+<td>sra</td>
+<td>Sequence Read Archive (SRA). Sequencing data from the next generation of sequencing platforms</td>
+</tr>
+<tr>
+<td>structure</td>
+<td>Structure (Molecular Modeling Database). Macromolecular 3D structures derived from the Protein Data Bank</td>
+</tr>
+<tr>
+<td>taxonomy</td>
+<td>Phylogenetic lineages of more than 160,000 organisms</td>
+</tr>
+<tr>
+<td>toolkit</td>
+<td>The NCBI C++ Toolkit</td>
+</tr>
+<tr>
+<td>toolkitall</td>
+<td>The NCBI C++ Toolkit</td>
+</tr>
+<tr>
+<td>toolkitbook</td>
+<td>The NCBI C++ Toolkit</td>
+</tr>
+<tr>
+<td>toolkitbookgh</td>
+<td>The NCBI C++ Toolkit</td>
+</tr>
+<tr>
+<td>unigene</td>
+<td>Expressed Sequence Tags (ESTs) organized by organism, tissue type and developmental stage</td>
 </tr>
 </tbody></table>
 
@@ -339,8 +1006,7 @@ Remember — a happy kitten is an authenticated kitten!
       <div class="dark-box">
           <div class="lang-selector">
                 <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
+                <a href="#" data-language-name="javascript">javascript</a>
           </div>
       </div>
     </div>
