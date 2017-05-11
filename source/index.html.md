@@ -88,7 +88,7 @@ db | none | [One of these](#bionode-ncbi-database)
 term | none | Species, dataset ID, etc
 
 ```shell
-bionode-ncbi search search taxonomy 'solenopsis invicta' --limit 1 --pretty
+bionode-ncbi search taxonomy 'solenopsis invicta' --limit 1 --pretty
 ```
 
 ```javascript
