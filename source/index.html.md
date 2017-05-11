@@ -76,7 +76,7 @@ ncbi.search('genome', 'human')
 
 Takes a database name and a query term. Returns the metadata.
 
-For a list of NCBI database that can be used, see this [documentation's appendix](#bionode-ncbi-database)
+For a list of NCBI database that can be used, see this [documentation's appendix](#bionode-ncbi-databases)
 
 ### Usage
 
@@ -84,7 +84,7 @@ For a list of NCBI database that can be used, see this [documentation's appendix
 
 Parameter | Default | Description
 --------- | ------- | -----------
-db | none | [One of these](#bionode-ncbi-database)
+db | none | [One of these](#bionode-ncbi-databases)
 term | none | Species, dataset ID, etc
 
 ```shell
@@ -154,7 +154,7 @@ Takes a database name and a query term. Returns the data.
 
 Parameter | Default | Description
 --------- | ------- | -----------
-db | none | [One of these](#bionode-ncbi-database)
+db | none | [One of these](#bionode-ncbi-databases)
 term | none | Species, dataset ID, etc
 
 
@@ -184,7 +184,7 @@ var opts = {
 ncbi.fetch(opts).on('data', console.log)
 ```
 
-For some databases there are multiple return types. A default one will be chosen automatically, however it is possible to specify this via the rettype option. The NCBI website provides a list of databasese supported by efetch here: [http://www.ncbi.nlm.nih.gov/books/NBK25497/table/chapter2.T._entrez_unique_identifiers_ui/?report=objectonly] (http://www.ncbi.nlm.nih.gov/books/NBK25497/table/chapter2.T._entrez_unique_identifiers_ui/?report=objectonly)
+For some databases there are multiple return types. A default one will be chosen automatically, however it is possible to specify this via the rettype option. The NCBI website provides a list of databasese supported by efetch here: [http://www.ncbi.nlm.nih.gov/books/NBK25497/table/chapter2.T._entrez_unique_identifiers_ui/?report=objectonly](http://www.ncbi.nlm.nih.gov/books/NBK25497/table/chapter2.T._entrez_unique_identifiers_ui/?report=objectonly)
 
 ## URLs
 
